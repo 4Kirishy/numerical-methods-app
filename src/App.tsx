@@ -3,13 +3,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Root } from "./pages/Root";
+import { Home } from "./pages/Home";
 
 export const App = () => {
   const router = createRouter([
     {
       path: "/",
       element: <Root />,
-      children: [],
+      children: [{ index: true, element: <Home /> }],
     },
   ]);
 

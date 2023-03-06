@@ -7,6 +7,9 @@ module.exports = {
         "text-main": "#161616",
         bg: "#F6FEFF",
       },
+      boxShadow: {
+        custom: "8px 8px 0px rgba(255, 0, 0, 0.25)",
+      },
     },
     fontFamily: {
       main: "Archivo",
