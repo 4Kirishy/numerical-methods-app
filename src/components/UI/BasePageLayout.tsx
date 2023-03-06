@@ -11,7 +11,7 @@ export const BasePageLayout = ({
   return (
     <section className="mt-16">
       <BaseContainer>
-        <h2 className="text-4xl uppercase font-semibold">{title}</h2>
+        <h2 className="text-4xl uppercase font-semibold mb-10">{title}</h2>
         {children}
       </BaseContainer>
     </section>
