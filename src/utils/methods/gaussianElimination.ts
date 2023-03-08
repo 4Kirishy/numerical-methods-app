@@ -35,7 +35,7 @@ function gaussianElimination(matrix: number[][]) {
     for (let j = i + 1; j < n; j++) {
       sum += matrix[i][j] * solution[j];
     }
-    solution[i] = (matrix[i][n] - sum) / matrix[i][i];
+    solution[i] = +((matrix[i][n] - sum) / matrix[i][i]).toFixed(2);
   }
 
   return solution;
