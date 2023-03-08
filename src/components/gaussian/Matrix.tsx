@@ -20,6 +20,20 @@ export const Matrix = ({ rows, cols }: MatrixProps) => {
   };
 
   const solveMatrix = () => {
+    let isValid = true;
+
+    matrix.forEach((row) => {
+      if (!isValid) return;
+      row.forEach((col) => {
+        if (typeof col !== "number") {
+          // console.log("invalid data...");
+          isValid = false;
+        }
+      });
+    });
+
+    if (!isValid) return;
+
     setAnswer(gaussianElimination(matrix));
     setMatrix(Array.from({ length: rows }, () => Array(cols).fill("")));
   };
