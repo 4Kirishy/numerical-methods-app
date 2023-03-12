@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "text-main": "#161616",
-        bg: "#F6FEFF",
+        bg: "#FFFFFF",
       },
       boxShadow: {
         custom: "8px 8px 0px rgba(255, 0, 0, 0.25)",

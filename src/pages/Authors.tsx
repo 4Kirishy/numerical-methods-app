@@ -8,8 +8,8 @@ import { BasePageLayout as AuthorsPageLayout } from "../components/UI/BasePageLa
 export const Authors = () => {
   const authors = [
     {
-      firstName: "Andrew",
-      lastName: "Znayko",
+      firstName: "Andreii",
+      lastName: "Znaiko",
       photoPath: andrew,
     },
     {
